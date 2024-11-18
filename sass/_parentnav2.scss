@@ -1,0 +1,22 @@
+@import "mixin.scss";
+@import "var.scss";
+.parentnav2{
+    
+    @include flex(row);
+    justify-content: space-between;
+    padding: 15px;
+    position: fixed;
+    width: 100vw;
+    background-color:black;
+    color: $textcolor;
+    opacity: 100%;
+    z-index: 2;
+    &-h2{
+        text-align: justify;
+    }
+    &-icons{
+        @include flex(row);
+        gap: 20px;
+        font-size: 20px;
+    }
+}

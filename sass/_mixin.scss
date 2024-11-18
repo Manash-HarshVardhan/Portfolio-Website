@@ -1,0 +1,41 @@
+@import "var.scss";
+
+@mixin flex($flexdir){
+    display: flex;
+    flex-direction: $flexdir;
+    justify-content: center;
+    align-items: center;
+}
+@mixin card{
+            display: flex;
+            flex-direction: column;
+            padding: 13px;
+            gap: 20px;
+            border-radius: 10px;
+            background-color:$cardcolor;
+            width: 420px;
+            // height: 200px;
+            &__para{
+                background-color:$cardtopcolor ;
+                border-radius: 5px;
+                padding: 5px;
+                width:fit-content;
+                font-size: small;
+                font-weight: 500;
+                
+
+            }
+            &__para2{
+                color: $textcolor2;
+            }
+}
+
+@mixin btn{
+    width: 200px;
+    height: 45px;
+    border-radius: 20px;
+    color: $textcolor;
+    font-size: 20px;
+    border: none;
+    background-color: $secondarycolor;
+}
